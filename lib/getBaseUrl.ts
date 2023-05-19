@@ -1,7 +1,7 @@
 import { cache } from 'react';
 
 export const getBaseUrl = cache(() =>
-  process.env.VERCEL_URL
+  process.env.use_vercel_endpoint
     ? `https://app-dir.vercel.app`
-    : `http://localhost:${process.env.PORT ?? 3000}`,
+    : `https://black-bush-07adf8a00.3.azurestaticapps.net/`,
 );
